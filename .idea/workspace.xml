@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7f8a688-11b8-4e1e-9aac-2dfa59cf18a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ScreenshotResizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenshotResizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenshotResizer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

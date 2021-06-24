@@ -49,6 +49,7 @@ def Main():
 
     j = 0
     for f in files:
+        print(j+1,"/",len(files))
         try:
             image = Image.open(f)
             images = ScaleImage(image, resX, resY)
@@ -58,7 +59,7 @@ def Main():
                 pic = images[i].save(writePath + "/" + str(resX[i]) + "_" + str(resY[i]) + "_" + str(j) + ".jpg", 'JPEG')
         except:
             print(f, "is either unreadable or not an image")
-            j+=1
+        j+=1
 
 
 if __name__ == '__main__':
