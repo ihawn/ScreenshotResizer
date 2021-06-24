@@ -20,7 +20,7 @@ def ScaleImage(im, resX, resY):
 
     for i in range(len(resX)):
         scaleFactor = max(float(resX[i]/w), float(resY[i]/h))
-        img = im.resize((round(scaleFactor*w), round(scaleFactor*h)))
+        img = im.resize((round(scaleFactor*w), round(scaleFactor*h)), resample=Image.ANTIALIAS)
         images.append(img)
 
     return images
@@ -42,8 +42,8 @@ def Main():
     readPath = 'C:/Users/Isaac/Documents/_games/SaveDave/Media/Screenshots'
     writePath = 'C:/Users/Isaac/Documents/_games/SaveDave/Media/IOS'
 
-    resX = [1242]
-    resY = [2688]
+    resX = [1242, 1242, 2048]
+    resY = [2688, 2208, 2732]
 
     files = GetAllFilesRecursive(readPath)
 
