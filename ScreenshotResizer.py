@@ -49,7 +49,7 @@ def Main():
 
     j = 0
     for f in files:
-        print(j+1,"/",len(files))
+        print(j+1, "/", len(files))
         try:
             image = Image.open(f)
             images = ScaleImage(image, resX, resY)
